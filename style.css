@@ -1,0 +1,213 @@
+@media(max-width:719px){
+
+    .slidecontainer{
+        display: none;
+    }
+
+    .labels{
+        height:150px;
+    }
+
+    .main-card p,
+    .description p{
+        display: none;
+    }
+
+    .card{
+        margin-top: 50px;
+    }
+    .main-card{
+        display: flex;
+        justify-content: center;
+    }
+
+    img{
+        object-fit: cover;
+        width:90%;
+        height: 300px;
+        border-radius: 20px;
+    }
+
+    .contacts{
+        margin:20px;
+    }
+
+    .contacts a::before{
+        content: '✉ ';
+    }
+    
+}
+
+@media(min-width:720px) and (max-width:1199px){
+    .slidecontainer{
+        display: none;
+    }
+    .labels{
+        height:130px;
+    }
+
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card{
+        width: 30%;
+        height: 30%;
+    }
+
+    .main-card{
+        background-color: lightblue;
+        padding:5px;
+        margin:5px;
+    }
+
+    .main-card p{
+        margin:5px 0 0 0;
+    }
+
+    .description{
+        display: none;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .contacts{
+        margin:40px;
+    }
+    .contacts a::before{
+        content: '✉ ';
+    }
+
+    .contacts .license{
+        float:right;
+    }
+}
+
+
+@media(min-width:1200px){
+
+    .labels{
+        padding: 20px;
+        background-color: lightblue;
+        border-radius: 5px;
+        margin:0 50px 0 0;
+        float:right;
+    }
+
+    .labels label{
+        border: 1px solid gray;
+        background-color: rgba(22, 42, 78, 0.115);
+    }
+    .slidecontainer *{
+        margin:0 0 20px 0;
+    }
+    .card{
+        border-radius: 5px;
+        margin:10px;
+        background-color: rgba(121, 168, 255, 0.115);
+        border: 1px solid rgba(0, 0, 0, 0.115);
+        width: 400px;
+        height: 200px;
+    }
+
+    .main-card{
+        height: 70%;
+        display: flex;
+        border: 1px solid rgba(0, 0, 0, 0.115);
+        padding: 5px;
+    }
+
+    .description{
+        margin: 5px;
+    }
+
+    img{
+        object-fit: cover;
+        margin: 0 10px 0 0;
+        width: 80%;
+        height: 100%;
+    }
+    .contacts{
+        width:100vw;
+        margin:100px 0 0 50px;
+    }
+    .license{
+        float:right;
+        margin: 0 70px 0 0;
+    }
+    br{
+        display: none;
+    }
+}
+
+.card:hover{
+    box-shadow: 8px 10px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+b{
+    word-wrap: break-word;
+    font-weight: bold;
+}
+
+.labels{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+label{ 
+    background-color: lightblue; 
+    padding: 10px; 
+    border-radius: 5px; 
+    width: 150px;
+    margin-top: 10px; 
+    text-align: center;
+}
+
+label:hover{
+    background-color: rgba(54, 64, 160, 0.393);
+}
+
+.header{ 
+    height:50px; 
+    width: 100%;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-size:2rem;
+    margin-top: 20px;
+}
+
+input[type="radio"]{ 
+    display: none; 
+}
+
+#cacke6:checked ~ .main{
+    display: block;
+}
+
+#cacke1:checked ~ .main div:not(.pirig),
+#cacke2:checked ~ .main div:not(.rulet),
+#cacke3:checked ~ .main div:not(.sirniki),
+#cacke4:checked ~ .main div:not(.tistechko),
+#cacke5:checked ~ .main div:not(.tort){
+    display:none;
+}
